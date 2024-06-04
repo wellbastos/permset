@@ -10,7 +10,7 @@ that you want to run as a non root user but may need to ensure their data folder
 ```
 FROM golang:1.17-bullseye as permset
 WORKDIR /src
-RUN git clone https://github.com/jacobalberty/permset.git /src && \
+RUN git clone https://github.com/wellbastos/permset.git /src && \
     mkdir -p /out && \
     go build -ldflags "-X main.chownDir=/data" -o /out/permset
 

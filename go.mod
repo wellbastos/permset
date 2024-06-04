@@ -1,3 +1,3 @@
-module github.com/jacobalberty/permset
+module github.com/wellbastos/permset
 
 go 1.17
